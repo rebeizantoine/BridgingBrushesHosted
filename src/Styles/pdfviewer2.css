@@ -3,20 +3,39 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .pdf-viewer-container {
-    height: 80vh; /* Set height to 80% of the viewport height */
-    width: 100%; /* Full width on mobile */
-    overflow: auto; /* Allow scrolling */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    border-radius: 0;
+    padding: 0;
   }
 
   .pdf-viewer {
-    width: 100%; /* Make the PDF viewer take up full width */
-    height: 100%; /* Make the PDF viewer take up full height */
+    width: 100%; /* Adjust to mobile width */
+    height: 100%; /* Adjust to mobile height */
   }
-  .rpv-core__viewer rpv-core__viewer--light {
-    width: 400px !important;
+
+  /* Force PDF content to 280px width */
+  .rpv-core__viewer {
+    width: 280px !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .rpv-core__canvas-layer {
+    width: 280px !important; /* Ensure the PDF canvas is 280px wide */
+    height: auto !important; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center align */
+  }
+
+  .rpv-core__page-layer {
+    width: 280px !important; /* Apply the same width to the page layer */
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  /* Specific styles for individual images */
+  canvas {
+    width: 280px !important; /* Override canvas width */
+    height: auto !important; /* Maintain aspect ratio */
   }
 }

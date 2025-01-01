@@ -93,6 +93,14 @@
     margin-left: 10px;
   }
 }
+@media (max-width: 370px) {
+  .left-text {
+    max-width: 355px;
+  }
+  .flex-1 {
+    max-width: 90%;
+  }
+}
 @media (min-width: 1650px) {
   .welcome-container {
     margin-left: 300px;

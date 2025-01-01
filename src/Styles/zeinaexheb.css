@@ -503,3 +503,8 @@
     left: 10%;
   }
 }
+@media (min-width: 1650px) {
+  .both {
+    top: 62% !important;
+  }
+}

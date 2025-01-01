@@ -133,9 +133,12 @@
     top: 0; /* Reset positioning */
     margin-top: 20px; /* Add space above the icons */
     left: 30px;
+    max-width: 100%;
   }
   .social-icons p {
     margin-bottom: 10px;
+    /* left: 15px; */
+    max-width: 80%;
   }
 
   .flex-social-icons {
@@ -145,6 +148,37 @@
 
   .social-icon {
     margin: 0 15px; /* Add space between icons */
+  }
+  .flex-social-icons {
+    width: 360px !important;
+    justify-content: center;
+    margin-left: -40px;
+  }
+  .contact-info-a {
+    font-size: 18px;
+  }
+  .signup-button {
+    /* width: 40%; */
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1650px) {
+  .email-signup-container {
+    height: 60vh;
+  }
+}
+@media (max-width: 370px) {
+  .flex-social-icons {
+    width: 360px !important;
+    justify-content: center;
+    margin-left: -40px;
+  }
+  .contact-info-a {
+    font-size: 18px;
+  }
+  .signup-button {
+    /* width: 40%; */
+    margin-top: 0px;
   }
 }
 @media (min-width: 1650px) {
