@@ -147,3 +147,8 @@
     margin: 0 15px; /* Add space between icons */
   }
 }
+@media (min-width: 1650px) {
+  .email-signup-container {
+    height: 60vh;
+  }
+}
