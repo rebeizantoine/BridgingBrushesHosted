@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../Styles/aboutus.css";
-import image11 from "../Images/exhibition1.jpg";
+// import image11 from "../Images/exhibition1.jpg";
 import image2 from "../Images/Owner-IMAGE.jpg";
 
 const AboutUs = () => {
@@ -9,13 +9,13 @@ const AboutUs = () => {
     abouttext1: `Founded by Danielle Moussalli, Bridging Brushes emerged from her vibrant career in film production across the Middle East, particularly in Lebanon. After relocating to Washington, D.C., Danielle discovered a dynamic art scene that inspired her to shift her focus toward curating and promoting art and cultural projects.`,
     abouttext2: `Established in 2024, Bridging Brushes is dedicated to creating bespoke artistic and cultural events. Collaborating with artists, writers, filmmakers, and designers, we bring each project to life with creativity and purpose, opening new horizons for artists.`,
     abouttext3: `Bridging Brushes is here to forge meaningful connections, find unique opportunities, and reach new audiences. We support artists in thriving and expanding their reach while providing galleries, buyers, and distributors with a reliable partner to handle logistics and ensure each project unfolds seamlessly.`,
-    aboutimg1: image11,
+    // aboutimg1: image11,
     aboutimg2: image2,
     aboutimg3: null, // Optional fallback for additional images
   });
 
   const [contactData, setContactData] = useState({
-    contact_facebook_link: "chicken12@hotmail.com123",
+    contact_linkedIn_link: "",
     contact_pinterest_link: "https://www.pinterest.com/example",
     contact_youtube_link: "https://www.youtube.com/@BridgingBrushes",
     contact_instagram_link: "https://www.instagram.com/bridgingbrushes/",
@@ -64,14 +64,6 @@ const AboutUs = () => {
           <div className="aboutus-content">
             <div className="aboutus-media-info">
               <ul>
-                {/*<li>
-                  <a
-                    href={contactData.contact_facebook_link}
-                    className="aboutus-icon"
-                  >
-                    <i className="fab fa-facebook"></i> Facebook
-                  </a>
-                </li>*/}
                 <li>
                   <a
                     href={contactData.contact_instagram_link}
@@ -82,29 +74,29 @@ const AboutUs = () => {
                 </li>
                 <li>
                   <a
+                    href={contactData.contact_linkedin_link}
+                    className="aboutus-icon"
+                  >
+                    <i className="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
                     href={contactData.contact_youtube_link}
                     className="aboutus-icon"
                   >
                     <i className="fab fa-youtube"></i> YouTube
                   </a>
                 </li>
-                {/*<li>
-                  <a
-                    href={contactData.contact_pinterest_link}
-                    className="aboutus-icon"
-                  >
-                    <i className="fab fa-pinterest"></i> Pinterest
-                  </a>
-                </li>*/}
               </ul>
             </div>
-            <div className="aboutus-image123">
+            {/* <div className="aboutus-image123">
               <img
                 src={aboutData123.aboutimg1}
                 alt="Community"
                 loading="lazy"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

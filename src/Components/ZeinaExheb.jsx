@@ -16,6 +16,7 @@ import image9 from "../Images/ZeinaNader/IMG13.JPG";
 import image12 from "../Images/ZeinaNader/IMG12.JPG";
 
 import PdfViewer2 from "./PdfViewer2";
+const ZeinaCatalog = "/ZN-CAtalog.pdf";
 // Remove this import: import ZeinaCatalogue from "/ZN-CAtalog.pdf";
 
 const ZeinaExheb = () => {
@@ -54,9 +55,8 @@ const ZeinaExheb = () => {
     about_artist:
       "International award-winning artist Zeina Nader has always followed her passion for painting and writing, believing deeply that all forms of art communicate.Zeina exhibited her work, in solos, duos and collectives, all around the world in cities such as New York, Tokyo, Paris, London, Madrid, Milan, Monaco, Copenhagen and Bruges to name a few. She celebrated in 2022, her hundredth exhibition, which took place in Barcelona.",
     sui_generis: {
-      title:
-        "ARTOMATIC WASHINGTON DC 2024 Edition – Solo Show by Nevine Mattar",
-      dates: "June 2024",
+      title: "Chromaticity-A Solo Exhibition by Zeina Nader",
+      dates: "June 6-30 2024",
       location: "Washington DC",
       about_artist:
         "International award-winning artist Zeina Nader has always followed her passion for painting and writing, believing deeply that all forms of art communicate.Zeina exhibited her work, in solos, duos and collectives, all around the world in cities such as New York, Tokyo, Paris, London, Madrid, Milan, Monaco, Copenhagen and Bruges to name a few. She celebrated in 2022, her hundredth exhibition, which took place in Barcelona.",
@@ -70,6 +70,10 @@ const ZeinaExheb = () => {
   const closePitch = () => setIsPitchOpen(false);
   const openCatalogue = () => setIsCatalogueOpen(true);
   const closeCatalogue = () => setIsCatalogueOpen(false);
+
+  const takeMeToInterview = () => {
+    navigate("https://www.youtube.com/watch?v=i1Q0F-CJfTE");
+  };
 
   return (
     <div className="single-exhibition-page1">
@@ -145,12 +149,26 @@ const ZeinaExheb = () => {
             <button className="artist-button4" onClick={openCatalogue}>
               View Catalog
             </button>
-            <button className="artist-button4" onClick={openPitch}>
+            <button
+              className="artist-button4"
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/@BridgingBrushes",
+                  "_blank"
+                )
+              }
+            >
               View Interview
             </button>
           </div>
         </div>
       </div>
+      <PdfViewer2
+        isOpen={isCatalogueOpen}
+        onRequestClose={closeCatalogue}
+        pdfUrl={ZeinaCatalog}
+        // title="Exhibition Catalogue"
+      />
 
       {selectedImage && (
         <div className="image-modal" onClick={() => setSelectedImage(null)}>

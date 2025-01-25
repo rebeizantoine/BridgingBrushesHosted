@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/realfooter2.css";
-import { FaLinkedin, FaYoutube } from "react-icons/fa";
 import instamini from "../Images/IMAGE-MINI-INSTAGRAM.png";
 import linkedInmini from "../Images/IMAGE-MINI-LINKEDIN.png";
 import youtubemini from "../Images/IMAGE-MINI-YOUTUBE.png";
@@ -41,19 +40,39 @@ const Realfoote2 = () => {
         <div className="social-icons">
           <p>Follow us:</p>
           <div className="flex-social-icons">
-            <a href="#" className="social-icon">
-              <img src={instamini} alt="" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <img src={instamini} alt="Instagram" />
             </a>
-            <a href="#" className="social-icon">
-              <img src={linkedInmini} alt="" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <img src={linkedInmini} alt="LinkedIn" />
             </a>
-            <a href="#" className="social-icon">
-              <img src={youtubemini} alt="" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <img src={youtubemini} alt="YouTube" />
             </a>
           </div>
         </div>
       </div>
+      {/* Add BurningBrushes Branding Here */}
+      <footer className="footer-branding">
+        <p>&copy; BurningBrushes@2025</p>
+      </footer>
     </div>
   );
 };
+
 export default Realfoote2;

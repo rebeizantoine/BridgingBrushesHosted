@@ -151,7 +151,7 @@ const ArtistNM = () => {
         isOpen={isPitchOpen}
         onRequestClose={closePitch}
         pdfUrl={NMBooklet}
-        title="Mattar's Pitch"
+        // title="Mattar's Pitch"
       />
     </div>
   );
