@@ -148,7 +148,7 @@ const ArtistZN = () => {
         isOpen={isPitchOpen}
         onRequestClose={closePitch}
         pdfUrl={ZeinaBooklet}
-        title="Zeina's Pitch"
+        // title="Zeina's Pitch"
       />
     </div>
   );

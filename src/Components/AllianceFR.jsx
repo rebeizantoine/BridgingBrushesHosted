@@ -8,7 +8,7 @@ import image3 from "../Images/AF exhibition/IMG_7324.JPG";
 import image4 from "../Images/AF exhibition/IMG_7329.JPG";
 import PdfViewer2 from "./PdfViewer2";
 // No need to import the PDF, instead use the path directly
-const ArtomaticCatalogue = "/NM-Catalog.pdf";
+const ArtomaticCatalogue = "/AF-catalog.pdf";
 
 const AllianceExheb = () => {
   const { exhibitionName } = useParams();
@@ -105,7 +105,7 @@ Discover their captivating work and the powerful narratives behind their creatio
             isOpen={isCatalogueOpen}
             onRequestClose={closeCatalogue}
             pdfUrl={ArtomaticCatalogue}
-            title="Exhibition Catalogue"
+            // title="Exhibition Catalogue"
           />
         </div>
       </div>

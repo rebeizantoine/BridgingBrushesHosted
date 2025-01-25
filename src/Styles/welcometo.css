@@ -93,6 +93,7 @@
     margin-left: 10px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 370px) {
   .left-text {
     max-width: 355px;
@@ -101,6 +102,8 @@
     max-width: 90%;
   }
 }
+=======
+>>>>>>> 0fdee30 (123123)
 @media (min-width: 1650px) {
   .welcome-container {
     margin-left: 300px;

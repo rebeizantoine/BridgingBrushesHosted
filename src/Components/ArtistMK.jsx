@@ -164,7 +164,7 @@ const ArtistMK = () => {
         isOpen={isPitchOpen}
         onRequestClose={closePitch}
         pdfUrl={MagaliBooklet}
-        title="Artist's Pitch"
+        // title="Artist's Pitch"
       />
     </div>
   );

@@ -149,7 +149,7 @@ const MagaliExheb = () => {
         isOpen={isCatalogueOpen}
         onRequestClose={closeCatalogue}
         pdfUrl={MagaliCatalogue}
-        title="Exhibition Catalogue"
+        // title="Exhibition Catalogue"
       />
 
       {/* Pitch PDF Viewer */}
@@ -157,7 +157,7 @@ const MagaliExheb = () => {
         isOpen={isPitchOpen}
         onRequestClose={closePitch}
         pdfUrl={MagaliBooklet}
-        title="Artist's Pitch"
+        // title="Artist's Pitch"
       />
 
       {selectedImage && (

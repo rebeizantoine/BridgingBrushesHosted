@@ -9,7 +9,7 @@ import image4 from "../Images/NevineMatar/IMG4.JPG";
 
 import PdfViewer2 from "./PdfViewer2";
 // No need to import the PDF, instead use the path directly
-const ArtomaticCatalogue = "/NM-Catalog.pdf";
+const ArtomaticCatalogue = "/NM-CATALOG.pdf";
 
 const NevineExheb = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const NevineExheb = () => {
   const [isCatalogueOpen, setIsCatalogueOpen] = useState(false);
 
   const exhibition = {
-    exhibition_name: "ARTOMATIC WASHINGTON DC 2024 Edition",
+    exhibition_name: "ARTOMATIC 2024 Edition",
     exhibition_description:
       "Bridging Brushes has participated in Artomatic 2024 Washington DC edition with work from Nevine Mattar.",
     exhibition_dates: "April-May 2024",
@@ -114,7 +114,7 @@ const NevineExheb = () => {
             isOpen={isCatalogueOpen}
             onRequestClose={closeCatalogue}
             pdfUrl={ArtomaticCatalogue} // This now uses the path correctly
-            title="Exhibition Catalogue"
+            // title="Exhibition Catalogue"
           />
         </div>
       </div>

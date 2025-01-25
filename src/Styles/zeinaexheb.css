@@ -500,7 +500,12 @@
   .both {
     position: absolute;
     top: 76% !important;
-    left: 10%;
+    left: 6.5%;
+  }
+}
+@media (min-width: 1650px) {
+  .both {
+    top: 62% !important;
   }
 }
 @media (min-width: 1650px) {
