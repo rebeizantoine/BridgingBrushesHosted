@@ -13,7 +13,7 @@ const MagaliBooklet = "/MK-Booklet-Artist.pdf";
 
 const ArtistMK = () => {
   const [isCatalogueOpen, setIsCatalogueOpen] = useState(false);
-  const [isPitchOpen, setIsPitchOpen] = useState(false);
+  const [isPitchOpen, setIsPitchOpen] = useState(true);
 
   const openCatalogue = () => setIsCatalogueOpen(true);
   const closeCatalogue = () => setIsCatalogueOpen(false);

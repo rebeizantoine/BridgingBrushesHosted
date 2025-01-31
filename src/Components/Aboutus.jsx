@@ -15,9 +15,9 @@ const AboutUs = () => {
   });
 
   const [contactData, setContactData] = useState({
-    contact_linkedIn_link: "",
+    contact_linkedIn_link: "https://www.linkedin.com/in/danielle-moussalli",
     contact_pinterest_link: "https://www.pinterest.com/example",
-    contact_youtube_link: "https://www.youtube.com/@BridgingBrushes",
+    contact_youtube_link: "https://www.youtube.com/@BridgingBrushes/videos",
     contact_instagram_link: "https://www.instagram.com/bridgingbrushes/",
   });
 

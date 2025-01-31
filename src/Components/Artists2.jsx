@@ -71,7 +71,7 @@ const Artists2 = () => {
     {
       _id: "6738b77760c87052d2055bad",
       artist_name: "Nevine",
-      artist_lastname: "Mattar[",
+      artist_lastname: "Mattar",
       artist_aka: "MK",
       artist_arttype: "Painter",
       artist_image: pici2,

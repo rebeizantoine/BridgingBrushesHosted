@@ -41,7 +41,7 @@ const Realfoote2 = () => {
           <p>Follow us:</p>
           <div className="flex-social-icons">
             <a
-              href="#"
+              href="https://www.instagram.com/bridgingbrushes"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -49,7 +49,7 @@ const Realfoote2 = () => {
               <img src={instamini} alt="Instagram" />
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/danielle-moussalli"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -57,7 +57,7 @@ const Realfoote2 = () => {
               <img src={linkedInmini} alt="LinkedIn" />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@BridgingBrushes/videos"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -69,7 +69,7 @@ const Realfoote2 = () => {
       </div>
       {/* Add BurningBrushes Branding Here */}
       <footer className="footer-branding">
-        <p>&copy; BurningBrushes@2025</p>
+        <p>&copy; BridgingBrushes@2025</p>
       </footer>
     </div>
   );

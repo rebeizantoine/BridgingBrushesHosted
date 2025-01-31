@@ -10,7 +10,7 @@ import artistImage from "../Images/NevineMatar/nevine-matar-small.png";
 const NMBooklet = "/NM-Catalog.pdf";
 
 const ArtistNM = () => {
-  const [isPitchOpen, setIsPitchOpen] = useState(false);
+  const [isPitchOpen, setIsPitchOpen] = useState(true);
 
   const openPitch = () => setIsPitchOpen(true);
   const closePitch = () => setIsPitchOpen(false);

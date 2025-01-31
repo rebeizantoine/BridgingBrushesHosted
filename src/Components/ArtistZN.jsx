@@ -10,7 +10,7 @@ import PdfViewer2 from "./PdfViewer2";
 const ZeinaBooklet = "/ZN-Catalog.pdf";
 
 const ArtistZN = () => {
-  const [isPitchOpen, setIsPitchOpen] = useState(false);
+  const [isPitchOpen, setIsPitchOpen] = useState(true);
 
   const openPitch = () => setIsPitchOpen(true);
   const closePitch = () => setIsPitchOpen(false);

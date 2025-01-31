@@ -26,7 +26,7 @@ const Projects = () => {
       navigateTo: "/afexheb",
     },
     {
-      title: "Participating artist Nevine Mattar",
+      title: "ARTOMATIC -Solo Show by Nevine Mattar",
       image: poster4,
       navigateTo: "/nmexheb",
     },

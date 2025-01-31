@@ -15,7 +15,7 @@ const AllianceExheb = () => {
   const navigate = useNavigate();
   const imageGallery = [image1, image2, image3, image4];
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isCatalogueOpen, setIsCatalogueOpen] = useState(false);
+  const [isCatalogueOpen, setIsCatalogueOpen] = useState(true);
 
   const exhibition = {
     exhibition_name: "Alliance Francaise",
@@ -44,7 +44,7 @@ Discover their captivating work and the powerful narratives behind their creatio
       <div
         className="banner1"
         style={{
-          backgroundImage: `url(${bannerImage})`,
+          backgroundImage: `url()`,
         }}
       >
         <div className="banner-content1">
