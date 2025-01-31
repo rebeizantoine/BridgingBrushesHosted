@@ -36,6 +36,7 @@ const PdfViewer2 = ({ isOpen, onRequestClose, pdfUrl, title }) => {
                 fileUrl={pdfUrl}
                 renderMode="svg" // Consider using svg mode for better scaling
                 className="pdf-viewer"
+                scale={window.innerWidth <= 768 ? 4 : 1}
               />
             </Worker>
           </div>

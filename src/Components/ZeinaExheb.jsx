@@ -16,7 +16,7 @@ import image9 from "../Images/ZeinaNader/IMG13.JPG";
 import image12 from "../Images/ZeinaNader/IMG12.JPG";
 
 import PdfViewer2 from "./PdfViewer2";
-const ZeinaCatalog = "/ZN-CAtalog.pdf";
+const ZeinaCatalog = "/ZN-Catalog.pdf";
 // Remove this import: import ZeinaCatalogue from "/ZN-CAtalog.pdf";
 
 const ZeinaExheb = () => {

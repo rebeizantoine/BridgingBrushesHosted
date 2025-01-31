@@ -9,7 +9,7 @@ import image4 from "../Images/NevineMatar/IMG4.JPG";
 
 import PdfViewer2 from "./PdfViewer2";
 // No need to import the PDF, instead use the path directly
-const ArtomaticCatalogue = "/NM-CATALOG.pdf";
+const ArtomaticCatalogue = "/NM-Catalog.pdf";
 
 const NevineExheb = () => {
   const navigate = useNavigate();
