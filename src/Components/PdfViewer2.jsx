@@ -40,7 +40,7 @@ const PdfViewer2 = ({ isOpen, onRequestClose, pdfUrl, title }) => {
               />
             </Worker>
           </div>
-        ) : (
+        ) : ( 
           <iframe
             src={pdfUrl}
             title="PDF Viewer"
