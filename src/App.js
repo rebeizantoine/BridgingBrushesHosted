@@ -50,6 +50,8 @@ import ArtistNM from "./Components/ArtistNM";
 import Artists2 from "./Components/Artists2";
 import Hero5 from "./Components/Hero5";
 import RealFooter2 from "./Components/Realfooter2";
+import FcExheb from "./Components/Fcexheb";
+import ArtistFC from "./Components/ArtistFC";
 function App() {
   return (
     <div className="App">
@@ -118,6 +120,16 @@ function App() {
               <>
                 <Header />
                 <ArtistZN />
+                <RealFooter2 />
+              </>
+            }
+          />
+          <Route
+            path="/Fadielchamaa"
+            element={
+              <>
+                <Header />
+                <ArtistFC />
                 <RealFooter2 />
               </>
             }
@@ -257,6 +269,16 @@ function App() {
               <>
                 <Header />
                 <AllianceExheb />
+                <RealFooter2 />
+              </>
+            }
+          />
+          <Route
+            path="/fcexheb"
+            element={
+              <>
+                <Header />
+                <FcExheb />
                 <RealFooter2 />
               </>
             }

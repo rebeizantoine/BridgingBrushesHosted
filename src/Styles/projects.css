@@ -26,6 +26,7 @@
   gap: 20px;
   width: 100%;
   max-width: 1200px;
+  justify-content: center;
 }
 
 /* Card styles */
@@ -40,7 +41,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
-
+.project-card-oki:nth-last-child(1):nth-child(odd) {
+  grid-column: span 2; /* Last item spans 2 columns only if odd number of items */
+  justify-self: center; /* Center align */
+  width: 50%; /* Adjust width for balance */
+}
+  
 .project-title-oki {
   font-size: 1.5rem;
   color: #ffffff;
@@ -56,7 +62,7 @@
   background-position: top;
 
   border-radius: 8px;
-  height: 450px;
+  height: 750px;
   transition: transform 0.3s ease-in-out;
 }
 

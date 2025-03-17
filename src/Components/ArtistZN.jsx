@@ -101,8 +101,8 @@ const ArtistZN = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="contact-info">
-        <h4 className="contact-info__title">Contact Me</h4>
+      {/* <div className="contact-info"> */}
+      {/* <h4 className="contact-info__title">Contact Me</h4>
         <div className="contact-info__icons">
           <a
             href="https://www.facebook.com/"
@@ -141,7 +141,7 @@ const ArtistZN = () => {
             <FaTwitter />
           </a>
         </div>
-      </div>
+      </div> */}
 
       {/* PDF Viewer Modal */}
       <PdfViewer2

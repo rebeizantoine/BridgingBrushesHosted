@@ -122,7 +122,7 @@ const ZeinaExheb = () => {
               <p>{exhibition.sui_generis.about_artist}</p>
               <button
                 className="button-special"
-                onClick={() => navigate("/MagaliKatra")}
+                onClick={() => navigate("/ZeinaNader")}
               >
                 <p>Read More</p>
               </button>
@@ -153,7 +153,7 @@ const ZeinaExheb = () => {
               className="artist-button4"
               onClick={() =>
                 window.open(
-                  "https://www.youtube.com/@BridgingBrushes",
+                  "https://www.youtube.com/watch?v=i1Q0F-CJfTE&t=157s",
                   "_blank"
                 )
               }

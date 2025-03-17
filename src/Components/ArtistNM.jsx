@@ -103,7 +103,7 @@ const ArtistNM = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="contact-info">
+        {/* <div className="contact-info">
           <h4 className="contact-info__title">Contact Me</h4>
           <div className="contact-info__icons">
             <a
@@ -143,7 +143,7 @@ const ArtistNM = () => {
               <FaTwitter />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* PDF Viewer Modal */}

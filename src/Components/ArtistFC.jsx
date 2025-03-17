@@ -2,50 +2,39 @@ import React, { useState } from "react";
 import { FaFacebook, FaPinterest, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Slider from "react-slick";
 import "../Styles/singleartist2.css";
-import image1 from "../Images/MagaliKatra/image-1-the-happy.png";
-import image2 from "../Images/MagaliKatra/image-2-let's-stay.png";
-import image3 from "../Images/MagaliKatra/image-3-dividedwefall.png";
-import Modal from "react-modal";
+import artistImage from "../Images/FadiChamaa/FadiChamaapp.png";
+import image1 from "../Images/FadiChamaa/REV1.png";
+import image2 from "../Images/FadiChamaa/REV2.png";
+import image3 from "../Images/FadiChamaa/REV3.png";
 import PdfViewer2 from "./PdfViewer2";
-import MagaliCatalogue from "../Images/MagaliKatra/Exhibition-Catalog.pdf";
-import artistImage from "../Images/MagaliKatra/Magaliportrait.jpg";
-const MagaliBooklet = "/MK-Booklet-Artist.pdf";
+const ZeinaBooklet = "/FadiChamaa.pdf";
 
-const ArtistMK = () => {
-  const [isCatalogueOpen, setIsCatalogueOpen] = useState(false);
+const ArtistFC = () => {
   const [isPitchOpen, setIsPitchOpen] = useState(true);
-
-  const openCatalogue = () => setIsCatalogueOpen(true);
-  const closeCatalogue = () => setIsCatalogueOpen(false);
 
   const openPitch = () => setIsPitchOpen(true);
   const closePitch = () => setIsPitchOpen(false);
 
   const artist = {
-    artist_name: "Magalie",
-    artist_lastname: "Katra",
-    artist_about: `Katra's art is visual poetry overflowing with energy and vivacity, with a distinctive signature style.
-      The artist captures and highlights human identities, portraying people through bold graphics, assertive postures,
-      graceful fluidity, and engaging compositions. With a mastery of graphic rhythm, she holds up a mirror to contemporary
-      life and depicts the underlying core of society.`,
-    artist_exhibitions: `Katra’s work has been showcased in many galleries, locally and internationally. Her projects include several
-      endeavors in Europe and the USA, featuring street art, book illustrations, and fashion design, conveying her vibrant spirit,
-      energy, and unique signature.`,
+    artist_name: "Fadi",
+    artist_lastname: "ELChamaa",
+    artist_about: `Fadi Elchamaa (b. 1960, Beirut) is a Lebanese painter whose work demonstrates a sustained and evolving engagement with abstract painting. Over four decades, he has developed a distinct visual language rooted in gesture and chromatic intensity.`,
+    artist_exhibitions: `Elchamaa’s work has been exhibited internationally, including at VOLTA New York (2023), Dubai, Paris, Washington DC, and Abidjan (2023). His paintings are in prominent private and institutional collections, including the Ramzi and Saeda Dalloul Art Foundation, R&R Haddad Collection, H&N Abou Chaar Collection, and Serhal Collection. Though rooted in abstraction, they carry an undeniable sense of luminosity, offering an uplifting and immersive experience that lingers.`,
+    artist_highlights: `In 2021, her painting was acquired by the Peoria Riverfront Museum in the USA for their permanent collection. In 2023, another painting was acquired by the London School of Economics in the UK. Recently, a large artwork was acquired by the Ritz-Carlton DIFC in Dubai for their main entrance lobby. To Zeina, life itself is the greatest artwork to exist.`,
   };
 
   const sliderData = [
     {
       image: image1,
-      description: "The Happy Crowd | 2024 Acrylic on Canvas | 38 x 38  inch",
+      description: "Reverberating Thoughts 29x21 inch Acrylic on paper ",
     },
     {
       image: image2,
-      description:
-        "Let’s stay together | 2024 Acrylic on Canvas | 38 x 38  inch",
+      description: " Sewing 29x21 inch Acrylic on paper",
     },
     {
       image: image3,
-      description: "Divided we fall | 2024 Acrylic on Canvas | 35  x 47  inch",
+      description: "Chasing a dragonfly 29x21 inch Acrylic on paper",
     },
   ];
 
@@ -57,12 +46,6 @@ const ArtistMK = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-  };
-
-  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
-
-  const handleCheckPdfClick = () => {
-    setIsPdfModalOpen(true);
   };
 
   return (
@@ -117,8 +100,8 @@ const ArtistMK = () => {
       </div>
 
       {/* Contact Section */}
-      {/* <div className="contact-info">
-        <h4 className="contact-info__title">Contact Me</h4>
+      {/* <div className="contact-info"> */}
+      {/* <h4 className="contact-info__title">Contact Me</h4>
         <div className="contact-info__icons">
           <a
             href="https://www.facebook.com/"
@@ -163,11 +146,11 @@ const ArtistMK = () => {
       <PdfViewer2
         isOpen={isPitchOpen}
         onRequestClose={closePitch}
-        pdfUrl={MagaliBooklet}
-        // title="Artist's Pitch"
+        pdfUrl={ZeinaBooklet}
+        // title="Zeina's Pitch"
       />
     </div>
   );
 };
 
-export default ArtistMK;
+export default ArtistFC;

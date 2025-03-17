@@ -4,7 +4,8 @@ import "../Styles/projects.css";
 import poster1 from "../Images/Poster1.png";
 import poster2 from "../Images/Poster2.jpg";
 import poster3 from "../Images/Poster3.png";
-import poster4 from "../Images/NevineMatar/nevine-matar-imagem.png"; // Corrected image for poster 4
+import poster4 from "../Images/NevineMatar/Neine-Matar-Small-Project.png";
+import poster5 from "../Images/FadiChamaa/fadiInvitation.jpg";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -29,6 +30,11 @@ const Projects = () => {
       title: "ARTOMATIC -Solo Show by Nevine Mattar",
       image: poster4,
       navigateTo: "/nmexheb",
+    },
+    {
+      title: "Mixed Media - Solo Show by Fadi ELChamaa",
+      image: poster5,
+      navigateTo: "/fcexheb",
     },
   ];
 
