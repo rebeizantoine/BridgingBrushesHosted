@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaFacebook, FaPinterest, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Slider from "react-slick";
 import "../Styles/singleartist2.css";
-import artistImage from "../Images/FadiChamaa/FadiChamaapp.png";
+import artistImage from "../Images/FadiChamaa/Fadi_El_Chamaa.jpeg";
 import image1 from "../Images/FadiChamaa/REV1.png";
 import image2 from "../Images/FadiChamaa/REV2.png";
 import image3 from "../Images/FadiChamaa/REV3.png";

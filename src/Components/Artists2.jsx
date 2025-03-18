@@ -163,7 +163,12 @@ const Artists2 = () => {
   const formatNameForURL = (name, lastName) => {
     return `${name.toLowerCase()}/${lastName.toLowerCase()}`;
   };
-  const hardCodedRoutes = ["/MagaliKatra", "/ZeinaNader", "/NevineMattar"]; // Define specific routes
+  const hardCodedRoutes = [
+    "/MagaliKatra",
+    "/ZeinaNader",
+    "/NevineMattar",
+    "/Fadielchamaa",
+  ]; // Define specific routes
   const handleNavigate = (index) => {
     const route = hardCodedRoutes[index] || "/"; // Fallback to "/" if no route exists for this index
     navigate(route);
