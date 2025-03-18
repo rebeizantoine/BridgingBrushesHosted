@@ -10,6 +10,7 @@ import pici1 from "../Images/MagaliKatra/magaly-katra-BIG.jpg";
 import pici2 from "../Images/NevineMatar/nevine-matar-small.png";
 
 import pici3 from "../Images/ZeinaNader/zeina-nader-BIG.png.jpg";
+import pici4 from "../Images/FadiChamaa/FadiChamaapp.png";
 
 const Artists2 = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -75,6 +76,33 @@ const Artists2 = () => {
       artist_aka: "MK",
       artist_arttype: "Painter",
       artist_image: pici2,
+      artist_country: "Lebanon",
+      artist_city: "Beirut",
+      artist_about:
+        "Katra holds a Master's degree in Visual Arts from the Lebanese Academy of Fine\\r\\nArts in Beirut and continued her studies at the National School of Fine Arts in Paris\\r\\n(Ecole national superieure des beaux art) and the Duperré Higher School of\\r\\nApplied Arts in Paris (Ecole Nationale Superieure Duperré).\\r\\nShe furthered her education with a Master's in Arts Management from the Higher\\r\\nSchool of Business in Beirut.",
+      artist_work1: gallery2,
+      artist_work1name: "Letting Go|2021",
+      artist_work1des: "Letting Go|2021 60 x 60 Acrylic",
+      artist_work2name: "Letting Go|2021",
+      artist_work2:
+        "https://res.cloudinary.com/docxw6ugs/image/upload/v1731770230/vcfk1hwe2lf7qnnsvp7l.png",
+      artist_work2des: "Letting Go|2021 60 x 60 Acrylic",
+      artist_work3name: "Among Them|2021",
+      artist_work3:
+        "https://res.cloudinary.com/docxw6ugs/image/upload/v1731770230/a4chsyioazrofxwekrxg.png",
+      artist_work3des: "Among Them| 2022 75 x 75 Acrylic on Canvas",
+      artist_pdf: "uploads/pdfs/Magali-Katra2-Antoine Rebeiz Sololearn.pdf",
+      featured_on_front: false,
+      artist_pitch: null,
+      __v: 0,
+    },
+    {
+      _id: "6738b77760c87052d2055bad",
+      artist_name: "Fadi",
+      artist_lastname: "ELChamaa",
+      artist_aka: "MK",
+      artist_arttype: "Painter",
+      artist_image: pici4,
       artist_country: "Lebanon",
       artist_city: "Beirut",
       artist_about:
@@ -187,10 +215,10 @@ const Artists2 = () => {
                       <li>
                         {artist.artist_name} {artist.artist_lastname}
                       </li>
-                      <li>
+                      {/* <li>
                         {artist.artist_country}, {artist.artist_city}
-                      </li>
-                      <li>{artist.artist_arttype}</li>
+                      </li> */}
+                      {/* <li>{artist.artist_arttype}</li> */}
                     </ul>
                   </nav>
                 </div>
@@ -198,16 +226,15 @@ const Artists2 = () => {
               <div className="medium-side">
                 <p>{artist.artist_about}</p>
               </div>
-              <div className="bottom-side">
+              {/* <div className="bottom-side">
                 <h2>Latest Work</h2>
                 <div className="flex-latest-work">
                   <img
                     src={artist.artist_work1}
                     alt={artist.artist_work1name}
                   />
-                  {/* <img src={artist.artist_work2} alt={artist.artist_work2name} /> */}
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

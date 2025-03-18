@@ -19,7 +19,7 @@ const ArtistNM = () => {
     artist_name: "Nevine",
     artist_lastname: "Mattar",
     artist_about: `A Lebanese artist renowned for her diverse artistic skills, Mattar has lived and studied across the globe, absorbing a wide range of artistic influences.`,
-    artist_exhibitions: `Her education spans prestigious cities such as Beirut, London, Los Angeles, New York, and Japan. Since 1983, Mattar has held yearly exhibitions worldwide and contributed to murals, illustrations, set designs, and fashion.`,
+    artist_exhibitions: `Her education spans prestigious cities such as Beirut, London, Los Angeles, New York, and Japan. Since 1983, Mattar has held yearly exhibitions worldwide and contributed to murals, illustrations, set designs, and fashion.Mattar is deeply involved in civic activities, including promoting recycling arts, and she played a pivotal role in establishing the first Paper Mache Association in Lebanon. She also chairs art juries and teaches Cultural Studies at leading Lebanese universities, balancing her robust academic and artistic careers.`,
     artist_highlights: `Mattar is deeply involved in civic activities, including promoting recycling arts, and she played a pivotal role in establishing the first Paper Mache Association in Lebanon. She also chairs art juries and teaches Cultural Studies at leading Lebanese universities, balancing her robust academic and artistic careers.`,
   };
 
