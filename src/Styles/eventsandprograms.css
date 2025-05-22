@@ -646,8 +646,6 @@
     line-height: 1.2em;
     color: #b89d4f;
     position: relative;
-    left: 33%;
-    right: 40%;
     margin-bottom: 100px;
   }
 
@@ -706,7 +704,7 @@
   }
 
   .exhibiii {
-    width: 200px;
+    width: 300px;
     height: auto;
     color: #b89d4f;
     margin-left: 40%;
@@ -809,6 +807,7 @@
   .events-and-programs > * {
     position: relative;
     z-index: 2;
+    margin-top: -200px;
   }
 
   .top-top-top-h2 {
