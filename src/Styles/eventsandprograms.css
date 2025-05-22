@@ -140,7 +140,6 @@
   height: auto;
   color: #b89d4f;
   justify-content: center;
-
   position: relative;
   top: -80px;
   display: flex;
@@ -512,7 +511,7 @@
   .exhibiii {
     width: 100%;
     display: flex;
-    margin-left: 30%;
+    /* margin-left: 30%; */
   }
 }
 @media (min-width: 1700px) {
