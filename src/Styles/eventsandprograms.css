@@ -216,9 +216,8 @@
 }
 
 .events-and-programs {
-  margin-bottom: 100px;
+  margin-top: -200px;
   align-items: center;
-  margin-top: 00px;
 
   background-size: cover;
   background-position: center;
@@ -501,19 +500,84 @@
     margin-top: 20px !important;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) and (max-width: 1650px) {
   .content-container {
-    margin-left: -105px;
+    margin-left: -105px !important;
   }
+
   .all-events-123 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
     margin-left: 3.8% !important;
+    margin-top: 40px !important;
+    padding: 0 20px !important;
+    width: 100% !important;
   }
+
+  .events-123,
+  .events-1234 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 1000px !important;
+    width: 100% !important;
+    border: 1px solid #ccc !important;
+    padding: 20px !important;
+    gap: 20px !important;
+    cursor: pointer !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .events-123:hover,
+  .events-1234:hover {
+    transform: scale(1.01) !important;
+  }
+
+  .cow-image {
+    max-width: 300px !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+
+  .right-exhibition {
+    flex: 1 !important;
+  }
+
+  .top-exheb,
+  .bottom-exheb {
+    margin-bottom: 10px !important;
+  }
+
+  .top-top-top {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
   .exhibiii {
-    width: 100%;
-    display: flex;
-    /* margin-left: 30%; */
+    margin-top: 60px !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .exhibiii-button {
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    background: black !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 6px !important;
   }
 }
+
 @media (min-width: 1700px) {
   .events-123,
   .events-1234 {
