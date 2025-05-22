@@ -109,13 +109,11 @@ const EventsandPrograms = () => {
                 </div>
               </div>
             ))}
-            <div className="exhibiii">
-              <button className="exhibiii-button">
-                <p onClick={() => navigate("/projects")}>
-                  VIEW ALL EXHIBITIONS
-                </p>
-              </button>
-            </div>
+          </div>
+          <div className="exhibiii">
+            <button className="exhibiii-button">
+              <p onClick={() => navigate("/projects")}>VIEW ALL EXHIBITIONS</p>
+            </button>
           </div>
         </div>
       </div>

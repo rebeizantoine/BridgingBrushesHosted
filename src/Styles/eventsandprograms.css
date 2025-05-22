@@ -135,7 +135,8 @@
 }
 
 .exhibiii {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   color: #b89d4f;
   justify-content: center;
