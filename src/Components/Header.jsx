@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { FaBars, FaTimes } from "react-icons/fa";
 import BrushLogopng from "../Images/HR_White.png";
+import BrushLogopng2 from "../Images/image 4.png";
 import "../Styles/header.css";
 
 const Header = () => {
   const navigate = useNavigate();
   const [showSidebar, setShowSidebar] = useState(false);
+  const location = useLocation();
+
+  const [showIntro, setShowIntro] = useState(location.pathname === "/");
 
   const handleNavigation = (path) => {
     setShowSidebar(false);
@@ -17,9 +23,28 @@ const Header = () => {
     console.log("Toggling sidebar");
     setShowSidebar(!showSidebar);
   };
+  useEffect(() => {
+    if (location.pathname === "/") {
+      const timer = setTimeout(() => {
+        setShowIntro(false);
+      }, 2000); // same as before
 
+      return () => clearTimeout(timer);
+    } else {
+      setShowIntro(false); // no intro if not homepage
+    }
+  }, [location.pathname]);
   return (
     <div>
+      {showIntro && (
+        <div className="logo-intro">
+          <img
+            src={BrushLogopng}
+            alt="Bridging Brushes Logo"
+            className="intro-logo"
+          />
+        </div>
+      )}
       <div className="header-box">
         <Helmet>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -141,6 +166,7 @@ const Header = () => {
                 height="48"
                 viewBox="0 96 960 960"
                 width="48"
+                fill="white" // ← add this
               >
                 <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
               </svg>

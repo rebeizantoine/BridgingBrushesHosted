@@ -52,10 +52,13 @@ import Hero5 from "./Components/Hero5";
 import RealFooter2 from "./Components/Realfooter2";
 import FcExheb from "./Components/Fcexheb";
 import ArtistFC from "./Components/ArtistFC";
+import ScrollToBridgingBrushes from "./Components/ScrollToBridgingBrushes";
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToBridgingBrushes />
+
         <Routes>
           <Route
             path="/"

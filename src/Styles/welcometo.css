@@ -1,119 +1,155 @@
-.welcome-container {
+.welcome-section {
+  padding: 100px 20px;
   text-align: center;
-  margin-left: 80px;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  font-family: "Poppins", sans-serif !important ;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 
-.welcome-flex {
-  display: flex;
+.welcome-text h1 {
+  font-size: 64px; /* Increased for emphasis */
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-.left-text {
-  color: #fff;
-  width: 400px;
-  justify-content: center;
-  text-align: center;
+.welcome-text p {
+  font-size: 28px; /* Bigger for readability */
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
-.left-text h2 {
-  font-size: 35px;
-  width: 350px;
-  margin-left: 15px;
-}
-
-.left-text p {
-  width: 420px;
-  font-size: 20px;
-}
-
-.welcome-image {
-  width: 100%;
-  height: 350px;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.image-circle-container {
-  display: flex;
-  gap: 20px; /* Space between the images */
-}
-
-.image-circle2 {
+.image-circle-group {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.circle-image {
   border-radius: 50%;
-  border: 8px solid #cdcccd; /* Default border */
-  width: 150px; /* Default size */
-  height: 150px; /* Default size */
-}
-
-/* Use nth-child to change sizes for each circle */
-.image-circle2:nth-child(1) {
+  object-fit: cover;
   width: 150px;
   height: 150px;
+  border: 6px solid #d1d1d1;
+  transition: transform 0.3s ease;
 }
 
-.image-circle2:nth-child(2) {
-  width: 175px;
-  height: 175px;
-  border: 10px solid #cdcccd; /* Larger border */
+.circle-image.large {
+  width: 180px;
+  height: 180px;
+  border-width: 8px;
 }
 
-.image-circle2:nth-child(3) {
-  width: 200px;
-  height: 200px;
-  border: 12px solid #cdcccd; /* Larger border */
+.circle-image.larger {
+  width: 210px;
+  height: 210px;
+  border-width: 10px;
 }
 
-.image-circle2:nth-child(4) {
-  width: 225px;
-  height: 225px;
-  border: 14px solid #cdcccd; /* Largest border */
+.circle-image.largest {
+  width: 240px;
+  height: 240px;
+  border-width: 12px;
 }
 
-.circle-image2 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill the circle without distortion */
+.circle-image:hover {
+  transform: scale(1.08);
 }
 
-/* Media query to hide the images on mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .image-circle-container {
-    display: none; /* Hide image container on mobile */
-  }
-  .left-text {
-    margin-left: -100px;
-  }
-  .left-text p {
-    width: 100%;
-    margin-left: 10px;
-  }
-}
-<<<<<<< HEAD
-@media (max-width: 370px) {
-  .left-text {
-    max-width: 355px;
-  }
-  .flex-1 {
-    max-width: 90%;
-  }
-}
-=======
->>>>>>> 0fdee30 (123123)
-@media (min-width: 1650px) {
-  .welcome-container {
-    margin-left: 300px;
+  .welcome-text h1 {
+    font-size: 40px;
   }
 
-  .left-text h2 {
-    width: 350px;
-    font-size: 38px;
+  .welcome-text p {
+    font-size: 22px;
+    line-height: 1.6;
   }
-  .left-text p {
-    font-size: 24px;
+
+  .circle-image,
+  .circle-image.large,
+  .circle-image.larger,
+  .circle-image.largest {
+    width: 110px;
+    height: 110px;
+    border-width: 5px;
+  }
+
+  .image-circle-group {
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .welcome-text h1 {
+    font-size: 32px;
+  }
+
+  .welcome-text p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .welcome-text h1 {
+    font-size: 72px;
+  }
+
+  .welcome-text p {
+    font-size: 32px;
+    max-width: 1000px;
+  }
+
+  .circle-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-image.large {
+    width: 210px;
+    height: 210px;
+  }
+
+  .circle-image.larger {
+    width: 240px;
+    height: 240px;
+  }
+
+  .circle-image.largest {
+    width: 270px;
+    height: 270px;
+  }
+}
+@media (max-width: 600px) {
+  .welcome-section {
+    padding: 0px 5px;
+  }
+  .welcome-text h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .welcome-text p {
+    font-size: 16px;
+    max-width: 98vw;
+    padding: 0 4px;
+    line-height: 1.4;
+  }
+  .image-circle-group {
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .circle-image,
+  .circle-image.large,
+  .circle-image.larger,
+  .circle-image.largest {
+    width: 70px;
+    height: 70px;
+    border-width: 3px;
   }
 }

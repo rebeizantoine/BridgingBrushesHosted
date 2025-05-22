@@ -98,12 +98,23 @@ nav ul a:hover {
   margin-top: 10px;
   margin-left: 10px;
 }
+@keyframes logoFadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 .steel-city {
   width: 200px;
   height: auto;
   margin-left: 100px;
   margin-top: -40px;
+  animation: logoFadeInZoom 1s ease-out forwards;
 }
 
 .steel-city:hover {
@@ -180,6 +191,58 @@ nav ul a:hover {
 .sidebar123 a:hover {
   background-color: #333;
 }
+.logo-intro {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 109vh;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow-x: hidden; /* prevent horizontal overflow */
+  overflow-y: hidden; /* keep vertical overflow hidden */
+  pointer-events: none;
+  animation: containerFadeOut 3.5s ease-in-out forwards;
+  overflow: hidden !important;
+  position: relative;
+  left: -52px;
+  top: -100px;
+}
+
+.intro-logo {
+  width: 60vw;
+  max-width: 600px; /* optional max width */
+  height: auto;
+  animation: logoFloatUp 3.5s ease-in-out forwards;
+  margin: 0 auto; /* center horizontally */
+  display: block; /* for margin auto to work */
+  transform-origin: center bottom; /* to keep scaling balanced */
+}
+
+@keyframes logoFloatUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(40px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(1.02) translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-60px);
+  }
+}
 
 @media (max-width: 600px) {
   .hideOnMobile {
@@ -249,7 +312,7 @@ nav ul a:hover {
   }
 
   .header-title {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   .steel-city {
@@ -286,5 +349,14 @@ nav ul a:hover {
 
   .hideOnMobile {
     display: block !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1700px) {
+  .header-ul {
+    position: absolute;
+    right: 10%;
+  }
+  .header-ul li a {
+    font-size: 22px !important;
   }
 }

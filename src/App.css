@@ -1,45 +1,77 @@
-.App {
-  text-align: center;
-}
-html,
-body {
+/* Fonts and base styling */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
   height: 100%;
-  background-color: #080404;
   font-family: "Poppins", sans-serif;
   background-color: #080404;
   background-image: url("./Images/Picture1.png");
-
   background-repeat: no-repeat;
-  background-attachment: fixed; /* For smooth scrolling effect */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  /*  overflow-y: scroll; */
-  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-  min-height: 100vh;
-  padding: 20px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #1e1e1e; /* Adjust based on your design */
+/* App wrapper */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Container for full-page content */
 .container {
   background-color: transparent;
-  min-height: 100vh; /* Optional: Ensures full page content */
+  min-height: 100vh;
 }
 
-/* Remove extra empty divs */
+/* Footer styling */
+footer {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+/* Remove unnecessary divs */
 .extra-space {
   display: none;
 }
+
+/* Custom Scrollbar (WebKit browsers like Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fbbf24; /* Amber */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e0a800;
+}
+
+/* Firefox Scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #fbbf24 #1a1a1a;
+}
+
+/* Optional spinning logo (can be removed if unused) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -51,25 +83,6 @@ footer {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-body {
-  background-color: #292929;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -78,4 +91,6 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Animations (imported file) */
 @import "./Styles/animations.css";

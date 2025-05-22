@@ -17,7 +17,7 @@ const Multiple = () => {
         <Gallery />
       </div> */}
       <Header />
-      <Welcome />
+      <Welcome id="bridging-brushes123" />
       <div className="component-shadow">
         <EventsandPrograms />
       </div>

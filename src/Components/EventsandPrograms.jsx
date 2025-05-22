@@ -7,6 +7,11 @@ import goldline from "../Images/exhitbition-line.png";
 import img1 from "../Images/MagaliKatra/mini-imagem-magali.png";
 import img2 from "../Images/AF exhibition/IMG_7317.JPG";
 import img3 from "../Images/ZeinaNader/mini-imagem.png";
+import poster1 from "../Images/Poster1.png";
+import poster2 from "../Images/Poster2.jpg";
+import poster3 from "../Images/Poster3.png";
+import poster4 from "../Images/NevineMatar/Neine-Matar-Small-Project.png";
+import poster5 from "../Images/FadiChamaa/fadiInvitation.jpg";
 
 const EventsandPrograms = () => {
   const navigate = useNavigate();
@@ -23,7 +28,8 @@ const EventsandPrograms = () => {
       exhibition_featured_image: img1,
       exhibition_opening_hours: "-Washington D.C.",
       exhibition_closing_hours: "",
-      exhibition_day: "",
+      exhibition_day: "5th",
+      exhibition_year: "2024",
       exhibition_month: "April",
       navigation_path: "/mkexheb",
     },
@@ -37,8 +43,8 @@ const EventsandPrograms = () => {
       exhibition_featured_image: img2,
       exhibition_opening_hours: "-Washington D.C.",
       exhibition_closing_hours: "",
-      exhibition_day: "",
-      exhibition_month: "February - March",
+      exhibition_day: "4th",
+      exhibition_month: "March",
       navigation_path: "/afexheb",
     },
     {
@@ -48,10 +54,11 @@ const EventsandPrograms = () => {
       exhibition_country: "United States",
       exhibition_city: "Washington D.C",
       exhibition_featured_image: img3,
-      exhibition_opening_hours: "-Washington D.C",
+      exhibition_opening_hours: "-Washington D.C.",
       exhibition_closing_hours: "",
-      exhibition_day: "",
+      exhibition_day: "6th",
       exhibition_month: "June",
+      exhibition_year: "2024",
       navigation_path: "/zmexheb",
     },
   ]);
@@ -84,7 +91,8 @@ const EventsandPrograms = () => {
                 <div className="right-exhibition">
                   <div className="top-exheb">
                     <h2>
-                      {exhibition.exhibition_month} {exhibition.exhibition_day}
+                      {exhibition.exhibition_month} {exhibition.exhibition_day}{" "}
+                      {exhibition.exhibition_year}
                     </h2>
                     <div className="top-top-top">
                       <h2 className="top-top-top-h2">

@@ -22,10 +22,10 @@
   transform: scale(1.05); /* Slightly increase scale on hover */
 }
 
-.all-events-123 {
+/* .all-events-123 {
   margin-left: 7%;
   color: #846f63 !important;
-}
+} */
 
 .right-exhibition,
 .right-exhibition4 {
@@ -63,7 +63,11 @@
 .top-exheb4 {
   display: flex;
 }
-
+.events-on-top {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
 .events-on-top h1 {
   width: 500px;
   height: 70px;
@@ -71,14 +75,14 @@
   line-height: 1.2em;
   color: #b89d4f;
   position: relative;
-  left: 40%;
-  right: 40%;
+  left: auto;
+  right: auto;
   margin-bottom: 100px;
 }
 
 .top-exheb h2,
 .top-exheb4 h2 {
-  width: 130px;
+  width: 180px;
   height: 42px;
   line-height: 1.8em;
   color: #846f63 !important;
@@ -131,12 +135,14 @@
 }
 
 .exhibiii {
-  width: 200px;
+  width: 100%;
   height: auto;
   color: #b89d4f;
-  margin-left: 42%;
+  justify-content: center;
+
   position: relative;
   top: -80px;
+  display: flex;
 }
 
 .exhibiii-button {
@@ -500,10 +506,12 @@
     margin-left: -105px;
   }
   .all-events-123 {
-    margin-left: 7.8% !important;
+    margin-left: 3.8% !important;
   }
   .exhibiii {
-    margin-left: 50%;
+    width: 100%;
+    display: flex;
+    margin-left: 30%;
   }
 }
 @media (min-width: 1700px) {
@@ -581,7 +589,7 @@
 
   .top-exheb h2,
   .top-exheb4 h2 {
-    width: 130px;
+    width: 180px;
     height: 42px;
     line-height: 1.8em;
     color: white;

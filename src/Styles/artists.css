@@ -204,23 +204,26 @@ body {
   }
 
   .ui-input-icon {
-    left: 350px;
+    left: 90%;
   }
 
   .artists-container {
     flex-direction: column;
     align-items: center;
+    display: block;
+    margin-bottom: 150px;
   }
 
   .box-artist {
     width: 100%;
     background-color: #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .top-side {
     flex-direction: column;
     align-items: center;
+    font-size: 13px;
   }
 
   .left-image img {
@@ -229,9 +232,8 @@ body {
   }
 
   .right-description {
-    width: 120%;
+    width: 100vw;
     text-align: center;
-    font-size: 12px;
   }
 
   .right-description li {
@@ -240,7 +242,7 @@ body {
   }
 
   .medium-side {
-    display: block;
+    display: none;
     text-align: center;
     font-size: 14px;
   }
@@ -264,6 +266,15 @@ body {
     font-size: 20px;
     letter-spacing: 2px;
     color: #333;
+  }
+  .artist-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .artist-nav li {
+    font-size: 40px !important;
   }
 }
 

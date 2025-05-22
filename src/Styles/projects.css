@@ -79,7 +79,12 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .projects-grid-oki {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr !important; /* Force one column */
+  }
+
+  .project-card-oki:nth-last-child(1):nth-child(odd) {
+    grid-column: auto; /* Reset span for last card */
+    width: 100%; /* Full width on mobile */
   }
 
   .project-poster-oki {

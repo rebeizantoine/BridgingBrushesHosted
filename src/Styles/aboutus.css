@@ -186,7 +186,7 @@ html {
   font-size: 3.5em;
   font-weight: 700;
   margin-bottom: 30px;
-  margin-left: 150px !important;
+  margin-left: 200px !important;
 }
 
 .aboutus-content {
@@ -223,7 +223,7 @@ html {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  max-width: 83%;
+  /* max-width: 83%; */
   margin-left: 5%;
   margin-top: 50px;
   font-size: 1.1em;
@@ -343,7 +343,9 @@ html {
     height: auto;
     margin-bottom: 20px;
   }
-
+  .all-sectiones {
+    width: 100% !important;
+  }
   .aboutus-image img {
     position: static; /* Resetting the absolute positioning */
     width: 100%;
@@ -353,18 +355,12 @@ html {
   }
 
   .aboutus-text-box {
-    max-width: 40% !important;
+    /* max-width: 40% !important; */
     padding: 20px;
     transform: translate(0, 0);
     text-align: center;
   }
-  .p-of-the-sectiones2 {
-    max-width: 60% !important;
-    padding: 20px;
-    transform: translate(0, 0);
-    text-align: left;
-    margin-left: 160px;
-  }
+
   .aboutus-text-box h3 {
     font-size: 1.6em;
   }
@@ -408,8 +404,13 @@ html {
   }
   .aboutus-image123 {
     max-height: 600px;
+
+    width: 100%;
   }
   .aboutus-main-title2 {
     margin-top: 90px;
+  }
+  .aboutus-image123 img {
+    width: auto;
   }
 }
