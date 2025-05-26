@@ -55,48 +55,49 @@ import ArtistFC from "./Components/ArtistFC";
 import ScrollToBridgingBrushes from "./Components/ScrollToBridgingBrushes";
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <ScrollToBridgingBrushes />
+    <HelmetProvider>
+      <div className="App">
+        <Router>
+          <ScrollToBridgingBrushes />
 
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero5 />
-                <Multiple />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero5 />
+                  <Multiple />
 
-                {/* <Section21 />
+                  {/* <Section21 />
                 <Gallery />
                 <EventsandPrograms /> */}
-                {/* <RealFooter2 /> */}
-                {/* <RealFooter2 /> */}
-                <title>Bridging Brushes</title>
-              </>
-            }
-          />
-          <Route
-            path="/artists"
-            element={
-              <>
-                <Header />
-                <Artists2 />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/sing2"
-            element={
-              <>
-                <Header />
-                <SingleArtist2 />
-                <RealFooter2 />
-              </>
-            }
-          />
-          {/* <Route
+                  {/* <RealFooter2 /> */}
+                  {/* <RealFooter2 /> */}
+                  <title>Bridging Brushes</title>
+                </>
+              }
+            />
+            <Route
+              path="/artists"
+              element={
+                <>
+                  <Header />
+                  <Artists2 />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/sing2"
+              element={
+                <>
+                  <Header />
+                  <SingleArtist2 />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            {/* <Route
             path="/artists/:artist_name/:artist_lastname"
             element={
               <>
@@ -107,199 +108,199 @@ function App() {
             }
           /> */}
 
-          <Route
-            path="/MagaliKatra"
-            element={
-              <>
-                <Header />
-                <ArtistMK />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/ZeinaNader"
-            element={
-              <>
-                <Header />
-                <ArtistZN />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/Fadielchamaa"
-            element={
-              <>
-                <Header />
-                <ArtistFC />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/NevineMattar"
-            element={
-              <>
-                <Header />
-                <ArtistNM />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/aboutus"
-            element={
-              <>
-                <Header />
-                <AboutUs />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/artists/artist/pdf/name/:artistFirstName/:artistLastName"
-            element={
-              <>
-                <Header />
-                <TestPdfViewer />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/contactus"
-            element={
-              <>
-                <Header />
-                <ContactUs2 />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/exhibitions"
-            element={
-              <>
-                <Header />
-                <Exhibition />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/newsletter"
-            element={
-              <>
-                <Header />
-                <Newsletter />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/exhibitions/:exhibitionName"
-            element={
-              <>
-                <Header />
-                <SingleExhebition />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/section21"
-            element={
-              <>
-                <Header />
-                <Section21 />
-              </>
-            }
-          />
-          <Route
-            path="/projects"
-            element={
-              <>
-                <Header />
-                <Projects />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/admin"
-            element={
-              <>
-                <Header />
-                <AdminLogin />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/mkexheb"
-            element={
-              <>
-                <Header />
-                <MagaliExheb />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/zmexheb"
-            element={
-              <>
-                <Header />
-                <ZeinaExheb />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/nmexheb"
-            element={
-              <>
-                <Header />
-                <NevineExheb />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/afexheb"
-            element={
-              <>
-                <Header />
-                <AllianceExheb />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/fcexheb"
-            element={
-              <>
-                <Header />
-                <FcExheb />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route
-            path="/dashboard"
-            element={<ProtectedRoute portopio={Dashboard} />}
-          />
-          <Route
-            path="/hero4"
-            element={
-              <>
-                <Header />
-                <Hero4 />
-              </>
-            }
-          />
-          {/* <Route
+            <Route
+              path="/MagaliKatra"
+              element={
+                <>
+                  <Header />
+                  <ArtistMK />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/ZeinaNader"
+              element={
+                <>
+                  <Header />
+                  <ArtistZN />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/Fadielchamaa"
+              element={
+                <>
+                  <Header />
+                  <ArtistFC />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/NevineMattar"
+              element={
+                <>
+                  <Header />
+                  <ArtistNM />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/aboutus"
+              element={
+                <>
+                  <Header />
+                  <AboutUs />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/artists/artist/pdf/name/:artistFirstName/:artistLastName"
+              element={
+                <>
+                  <Header />
+                  <TestPdfViewer />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/contactus"
+              element={
+                <>
+                  <Header />
+                  <ContactUs2 />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/exhibitions"
+              element={
+                <>
+                  <Header />
+                  <Exhibition />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/newsletter"
+              element={
+                <>
+                  <Header />
+                  <Newsletter />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/exhibitions/:exhibitionName"
+              element={
+                <>
+                  <Header />
+                  <SingleExhebition />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/section21"
+              element={
+                <>
+                  <Header />
+                  <Section21 />
+                </>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <>
+                  <Header />
+                  <Projects />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/admin"
+              element={
+                <>
+                  <Header />
+                  <AdminLogin />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/mkexheb"
+              element={
+                <>
+                  <Header />
+                  <MagaliExheb />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/zmexheb"
+              element={
+                <>
+                  <Header />
+                  <ZeinaExheb />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/nmexheb"
+              element={
+                <>
+                  <Header />
+                  <NevineExheb />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/afexheb"
+              element={
+                <>
+                  <Header />
+                  <AllianceExheb />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/fcexheb"
+              element={
+                <>
+                  <Header />
+                  <FcExheb />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route
+              path="/dashboard"
+              element={<ProtectedRoute portopio={Dashboard} />}
+            />
+            <Route
+              path="/hero4"
+              element={
+                <>
+                  <Header />
+                  <Hero4 />
+                </>
+              }
+            />
+            {/* <Route
             path="/singleex"
             element={
               <>
@@ -309,52 +310,53 @@ function App() {
               </>
             }
           /> */}
-          <Route
-            path="/exhibition123"
-            element={
-              <>
-                <Header />
-                <EventsandPrograms />
-              </>
-            }
-          />
-          <Route
-            path="/gallery123"
-            element={
-              <>
-                <Header />
-                <Gallery />
-              </>
-            }
-          />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route
-            path="/dashboard2"
-            element={
-              <>
-                {/* <DashboardHome />
+            <Route
+              path="/exhibition123"
+              element={
+                <>
+                  <Header />
+                  <EventsandPrograms />
+                </>
+              }
+            />
+            <Route
+              path="/gallery123"
+              element={
+                <>
+                  <Header />
+                  <Gallery />
+                </>
+              }
+            />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route
+              path="/dashboard2"
+              element={
+                <>
+                  {/* <DashboardHome />
                 <DashboardHome2 /> */}
-                <ArtistDashboard />
-                {/* <DashboardExperience />
+                  <ArtistDashboard />
+                  {/* <DashboardExperience />
                 <DashboardSkills />
                 <DashboardAbout /> */}
-              </>
-            }
-          />
-          <Route
-            path="/dashboard3"
-            element={
-              <>
-                <Header />
-                <DashboardGalleries />
-                <RealFooter2 />
-              </>
-            }
-          />
-          <Route path="/dashboard4" element={<DashboardHome />} />
-        </Routes>
-      </Router>
-    </div>
+                </>
+              }
+            />
+            <Route
+              path="/dashboard3"
+              element={
+                <>
+                  <Header />
+                  <DashboardGalleries />
+                  <RealFooter2 />
+                </>
+              }
+            />
+            <Route path="/dashboard4" element={<DashboardHome />} />
+          </Routes>
+        </Router>
+      </div>
+    </HelmetProvider>
   );
 }
 
