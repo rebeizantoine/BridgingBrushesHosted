@@ -53,6 +53,7 @@ import RealFooter2 from "./Components/Realfooter2";
 import FcExheb from "./Components/Fcexheb";
 import ArtistFC from "./Components/ArtistFC";
 import ScrollToBridgingBrushes from "./Components/ScrollToBridgingBrushes";
+import { HelmetProvider } from "react-helmet-async";
 function App() {
   return (
     <HelmetProvider>
